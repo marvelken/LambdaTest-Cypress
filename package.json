@@ -1,0 +1,26 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "concurrently \"npm run start\" \"wait-on http://localhost:3000 && npm run cypress:run\"",
+    "test:open": "concurrently \"npm run start\" \"wait-on http://localhost:3000 && npm run cypress:open\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cypress": "^14.4.1",
+    "nodemon": "^3.1.10",
+    "wait-on": "^8.0.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

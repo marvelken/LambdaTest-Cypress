@@ -1,0 +1,27 @@
+{
+  "lambdatest_auth": {
+    "username": "miracleficient",
+    "access_key": "B24ICNp6fQxBVGI2XYcKtGYFxAFlD5rukXrkBVl34CE5zG8zVm"
+  },
+  "browsers": [
+    {
+      "browser": "Chrome",
+      "platform": "Windows 10",
+      "versions": ["latest"]
+    },
+    {
+      "browser": "Firefox",
+      "platform": "macOS Big Sur",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "build_name": "Sample Cypress Tests",
+    "parallels": 2,
+    "specs": "./cypress/e2e/**/*.cy.js"
+  },
+  "tunnel_settings": {
+    "tunnel": true,
+    "tunnel_name": "cypress-tunnel"
+  }
+}
